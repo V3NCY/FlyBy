@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+<style>
+    /* Style the video: 100% width and height to cover the entire window */
+    #myVideo {
+      z-index: -1;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    /* Add some content at the bottom of the video/page */
+    .content {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 110%;
+      padding: 100px;
+    }
+
+    /* Style the button used to pause/play the video */
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #myBtn:hover {
+      background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+      color: black;
+    }
+</style>
+
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="~/plane.mp4" type="video/mp4">
+</video>
+
+<div class="wrapper bg-white">
+        <form action="#">
+            <div class="form-group border-bottom d-flex align-items-center justify-content-between flex-wrap">
+                <label class="option my-sm-0 my-2">
+                    <input type="radio" name="radio" checked>Round Trip
+                    <span class="checkmark"></span>
+                </label>
+                <label class="option my-sm-0 my-2">
+                    <input type="radio" name="radio">One Way
+                    <span class="checkmark"></span>
+                </label>
+                <div class="d-flex align-items-center my-sm-0 my-2">
+                    <a href="#" class="text-decoration-none">
+                        Multi-city/Stopovers <span class="fas fa-angle-right ps-2 text-primary"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="form-group d-sm-flex margin">
+                <div class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <input type="text" required placeholder="From" class="form-control">
+                    <div class="label" id="from"></div>
+                    <span class="fas fa-dot-circle text-muted"></span>
+                </div>
+                <div class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <input type="text" required placeholder="To" class="form-control">
+                    <div class="label" id="to"></div>
+                    <span class="fas fa-map-marker text-muted"></span>
+                </div>
+            </div>
+            <div class="form-group d-sm-flex margin">
+                <div class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative">
+                    <input type="date" required placeholder="Depart Date" class="form-control">
+                    <div class="label" id="depart"></div>
+                </div>
+                <div class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <input type="date" required placeholder="Return Date" class="form-control">
+                    <div class="label" id="return"></div>
+                </div>
+            </div>
+            <div class="form-group border-bottom d-flex align-items-center position-relative">
+                <input type="text" required placeholder="Traveller(s)" class="form-control">
+                <div class="label" id="psngr"></div>
+                <span class="fas fa-users text-muted"></span>
+            </div>
+            <div class="form-group my-3">
+                <div class="btn btn-primary rounded-3 d-flex justify-content-center text-center p-3">Search Flights
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+<div class="content">
+    <h1>FlyBy</h1>
+    <p>Flights Next Generation</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
