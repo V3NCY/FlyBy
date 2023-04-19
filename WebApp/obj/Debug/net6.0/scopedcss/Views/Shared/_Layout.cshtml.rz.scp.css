@@ -39,17 +39,18 @@ button.accept-policy[b-7882z672yd] {
   line-height: inherit;
 }
 
-.footer[b-7882z672yd] {
+/*.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
-}
+}*/
 
 nav[b-7882z672yd] {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    text-align: end;
 }
 nav:hover[b-7882z672yd]{
 
@@ -67,7 +68,7 @@ nav:hover[b-7882z672yd]{
         background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
         border-radius: 50px;
     }
-.footer[b-7882z672yd] {
+/*.footer {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     text-align: center;
@@ -75,7 +76,7 @@ nav:hover[b-7882z672yd]{
     font-family: 'High Tower Text';
     font-weight: 500;
     font-size: 25px;
-}
+}*/
 .btn[b-7882z672yd] {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -85,3 +86,4 @@ nav:hover[b-7882z672yd]{
     font-weight: 500;
     font-size: 20px;
 }
+

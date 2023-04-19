@@ -19,3 +19,14 @@ function myFunction() {
     }
 }
 
+
+//auto hide flyby video pause content
+$(window).scroll(function () {
+
+    if ($(this).scrollTop() > 0) {
+        $('.content').fadeOut();
+    }
+    else {
+        $('.content').fadeIn();
+    }
+});
