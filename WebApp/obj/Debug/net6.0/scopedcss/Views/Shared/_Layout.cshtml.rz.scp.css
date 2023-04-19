@@ -47,6 +47,10 @@ button.accept-policy[b-7882z672yd] {
   line-height: 60px;
 }
 
+nav[b-7882z672yd] {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
 nav:hover[b-7882z672yd]{
 
 }
@@ -54,7 +58,9 @@ nav:hover[b-7882z672yd]{
 .nav-item[b-7882z672yd]{
     font-family: 'High Tower Text';
     font-size: 25px;
-    font-weight: 500;    
+    font-weight: 500; 
+    color: white;
+
 }
     .nav-item:hover[b-7882z672yd] {
         background: rgb(246,31,41);
@@ -62,10 +68,20 @@ nav:hover[b-7882z672yd]{
         border-radius: 50px;
     }
 .footer[b-7882z672yd] {
-    background: #1d1d1d;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     text-align: center;
     color: #fff;
     font-family: 'High Tower Text';
     font-weight: 500;
     font-size: 25px;
+}
+.btn[b-7882z672yd] {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: white;
+    border: none;
+    font-family: 'High Tower Text';
+    font-weight: 500;
+    font-size: 20px;
 }
