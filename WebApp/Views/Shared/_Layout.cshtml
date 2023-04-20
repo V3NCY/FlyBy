@@ -24,17 +24,22 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-action="Index">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-action="Flights">Flights</a>
+                    <li class="nav-item dropdown">                   
+                    <div>
+                            <button class="btn dropdown-toggle" asp-action="Flights" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Flights
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" asp-action="Flights">Flights</a></li>
+                                <li><a class="dropdown-item" asp-action="FlightRadar">Flight radar</a></li>
+                        </ul>
+                    </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-action="About">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-action="Contacts">Contacts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-action="FlightRadar">Flight Radar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-action="Privacy">FAQ</a>

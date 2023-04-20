@@ -540,23 +540,26 @@ ul {
 .header-nav {
    text-align: center;
    justify-content: center;
-
+   overflow: hidden;
+   flex-wrap:wrap;
 }
 
-.header-nav ul {
-    height: 25px;
-    display: block;
-    padding: 0 22px;
-    position: relative;
-    text-decoration: none;
-    background: white;
-    vertical-align: top;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-border-radius: 44px;
-    border-radius: 44px;
-    text-align: center;
-}
+    .header-nav ul {
+        height: 25px;
+        display: block;
+        padding: 0 22px;
+        position: relative;
+        text-decoration: none;
+        background: white;
+        vertical-align: top;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-border-radius: 44px;
+        border-radius: 44px;
+        text-align: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
 
 .app-icons {
     display: flex;
@@ -574,4 +577,9 @@ ul {
 
 .apple {
     width: 164px;
+}
+
+.table {
+    white-space: wrap;
+    overflow-x: auto;
 }
