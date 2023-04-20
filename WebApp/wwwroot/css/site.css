@@ -584,3 +584,7 @@ ul {
     overflow-x: auto;
 }
 
+.card-img-top {
+    border-radius: 50%;
+    width: 200px;
+}

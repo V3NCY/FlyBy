@@ -22,27 +22,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="Index">Home</a>
+                        <a class="nav-link" asp-action="Index"><i class="fa-solid fa-house"></i> <span> Home</span></a>
                     </li>
                     <li class="nav-item dropdown">                   
                     <div>
                             <button class="btn dropdown-toggle" asp-action="Flights" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgba(255,255,255,.5);">
-                                <strong style="color: rgba(255,255,255,.5);">Flights</strong>
+                                <strong style="color: rgba(255,255,255,.5);"> <i class="fa-solid fa-plane"></i> <span> Flights</span></strong>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" asp-action="Flights">Flights</a></li>
-                                <li><a class="dropdown-item" asp-action="FlightRadar">Flight radar</a></li>
+                                <li><a class="dropdown-item" asp-action="Flights"><i class="fa-solid fa-plane-departure"></i><span> Flights</span></a></li>
+                                <li><a class="dropdown-item" asp-action="FlightRadar"><i class="fa-sharp fa-solid fa-satellite-dish"></i><span> Flight radar</span></a></li>
                         </ul>
                     </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="About">About</a>
+                        <a class="nav-link" asp-action="About"><i class="fa-solid fa-users"></i><span> About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="Contacts">Contacts</a>
+                        <a class="nav-link" asp-action="Contacts"><i class="fa-solid fa-address-card"></i><span> Contacts</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="Privacy">FAQ</a>
+                        <a class="nav-link" asp-action="Privacy"><i class="fa-solid fa-circle-question"></i><span> FAQ</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
