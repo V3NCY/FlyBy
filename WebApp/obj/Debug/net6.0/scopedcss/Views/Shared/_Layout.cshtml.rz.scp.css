@@ -51,6 +51,7 @@ nav[b-7882z672yd] {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     text-align: end;
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,.2);
 }
 nav:hover[b-7882z672yd]{
 
