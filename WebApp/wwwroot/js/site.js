@@ -30,3 +30,23 @@ $(window).scroll(function () {
         $('.content').fadeIn();
     }
 });
+//animation
+
+var myArray = ['.navbar-brand'];
+var n = 1;
+setInterval(function () {
+    $(".flip").html(myArray[n]);
+    if (myArray.length - 1 == n) {
+        n = 0;
+    } else {
+        n++;
+    }
+}, 3000);
+
+$(window).scroll(function () {
+    if ($(document).scrollTop() > 550) {
+        $('nav').addClass('shrink');
+    } else {
+        $('nav').removeClass('shrink');
+    }
+});

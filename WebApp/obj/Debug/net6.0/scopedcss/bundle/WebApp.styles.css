@@ -90,3 +90,38 @@ nav:hover[b-7882z672yd]{
     font-size: 20px;
 }
 
+.animated[b-7882z672yd] {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flip-b-7882z672yd {
+    50% {
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.8);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+        animation-timing-function: ease-in;
+    }
+}
+
+.animated.flip[b-7882z672yd] {
+    backface-visibility: visible;
+    animation-name: flip-b-7882z672yd;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 150px;
+    text-align: center;
+}
+
+.services[b-7882z672yd]{
+    color: #fff;
+}
