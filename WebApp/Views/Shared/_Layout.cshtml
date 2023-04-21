@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand " href="/"><img src="~/logo.svg" width="60"/></a>
+            <a class="navbar-brand" href="/"><img src="~/logo.svg" width="60"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +42,6 @@
                         <a class="nav-link" asp-action="Contacts"><i class="fa-solid fa-headset"></i><span> Support</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="Privacy"><i class="fa-solid fa-circle-question"></i><span> FAQ</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -71,9 +70,18 @@
                         </ul>
                     </div>
                     <!--language selector end-->
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Login"><i class="fa-solid fa-user"></i><span></span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </form>
             </div>
         </nav>
+        
+            
     </header>
     
     <div class="container">

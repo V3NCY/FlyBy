@@ -2,12 +2,12 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand[b-7882z672yd] {
+/*a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
-
+*/
 a[b-7882z672yd] {
   color: #0077cc;
 }
@@ -90,6 +90,14 @@ nav:hover[b-7882z672yd]{
     font-weight: 500;
     font-size: 20px;
 }
+/*animation*/
+html[b-7882z672yd], body[b-7882z672yd] {
+    height: 100%;
+}
+
+.container-fluid[b-7882z672yd] {
+    height: 100%;
+}
 
 .animated[b-7882z672yd] {
     animation-duration: 3s;
@@ -123,7 +131,30 @@ nav:hover[b-7882z672yd]{
     text-align: center;
 }
 
-.services[b-7882z672yd]{
-    color: #fff;
+.jumbotron[b-7882z672yd] {
+    height: 100%;
+    background-image: url(http://www.starimager.com/Images/Detail%20Page%20Images/ngc%201763_1800_LCO%20AP12MC.jpg);
+    display: flex;
+    align-items: center;
 }
 
+    .jumbotron > .container[b-7882z672yd] {
+        color: white;
+    }
+
+nav.navbar[b-7882z672yd] {
+    background-color: #ccc;
+    // Animation -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+    nav.navbar.shrink[b-7882z672yd] {
+        background-image: url(http://www.starimager.com/Images/Detail%20Page%20Images/ngc%201763_1800_LCO%20AP12MC.jpg) !important;
+        box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.63);
+    }
+
+.navbar-brand[b-7882z672yd] {
+    color: #2c2c2c;
+    letter-spacing: .2em;
+    text-shadow: 2px 2px 0px #d5d5d5, 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
