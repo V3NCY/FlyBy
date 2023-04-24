@@ -46,6 +46,10 @@ namespace WebApp.Controllers
         {
             return View();
         }
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
         public IActionResult Profile()
         {
             return View();
