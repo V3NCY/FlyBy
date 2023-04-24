@@ -50,3 +50,4 @@ $(window).scroll(function () {
         $('nav').removeClass('shrink');
     }
 });
+

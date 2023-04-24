@@ -536,10 +536,10 @@ ul {
 
 /*navbar contacts*/
 .header-nav {
-   text-align: center;
-   justify-content: center;
-   overflow: hidden;
-   flex-wrap:wrap;
+    text-align: center;
+    justify-content: center;
+    overflow: visible;
+    display: flex;
 }
 
     .header-nav ul {
@@ -731,4 +731,4 @@ ul {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-    
+/* Login */
