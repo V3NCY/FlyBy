@@ -42,6 +42,7 @@ body {
 /*Form*/
     .wrapper form {
         padding: 40px 50px;
+
     }
 
         .wrapper form .form-group {
@@ -192,15 +193,16 @@ input[type="date"] {
     }
 }
 /*Contact Form*/
-body {
+/*body {
     font-family: 'Lato', sans-serif;
+    z-index: 1000;
 }
 
 h1 {
     margin-bottom: 40px;
-}
-
-label {
+}*/
+/*Contact form header sections - First Name, L. Name*/
+/*label {
     color: #333;
 }
 
@@ -220,7 +222,8 @@ label {
 .card {
     margin-left: 10px;
     margin-right: 10px;
-}
+    z-index: 1;
+}*/
 
 /*about us*/
 
