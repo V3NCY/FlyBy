@@ -757,7 +757,7 @@ ul {
 select {
     margin: 40px;
     color: #fff;
-}
+    }
 
     select:hover {
         background: rgb(246,31,41);
@@ -826,3 +826,4 @@ select {
     background: #007bb5;
     color: white;
 }
+
