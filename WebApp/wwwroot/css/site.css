@@ -796,7 +796,7 @@ select {
 .fa {
     padding: 20px;
     font-size: 40px;
-/*    width: 50px;*/
+    width: 55px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -809,7 +809,6 @@ select {
 
 
 .fa-facebook {
-    width: 19% ;
     background: #3B5998;
     color: white;
 }
