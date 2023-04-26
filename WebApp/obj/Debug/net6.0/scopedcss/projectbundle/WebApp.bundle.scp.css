@@ -155,4 +155,42 @@ nav.navbar[b-7882z672yd] {
     color: #2c2c2c;
     letter-spacing: .2em;
     text-shadow: 2px 2px 0px #d5d5d5, 3px 3px 0px rgba(0, 0, 0, 0.6);
+    -webkit-animation: fa-passing 1s;
+    animation: fa-passing 1s
 }
+
+/* PASSING */
+@keyframes passing-b-7882z672yd {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0
+    }
+
+    50% {
+        transform: translateX(0%);
+        opacity: 1
+    }
+
+    100% {
+        transform: translateX(50%);
+        opacity: 0
+    }
+}
+
+.faa-passing.animated[b-7882z672yd],
+.faa-passing.animated-hover:hover[b-7882z672yd],
+.faa-parent.animated-hover:hover > .faa-passing[b-7882z672yd] {
+    animation: passing-b-7882z672yd 2s linear infinite;
+}
+
+    .faa-passing.animated.faa-fast[b-7882z672yd],
+    .faa-passing.animated-hover.faa-fast:hover[b-7882z672yd],
+    .faa-parent.animated-hover:hover > .faa-passing.faa-fast[b-7882z672yd] {
+        animation: passing-b-7882z672yd 1s linear infinite;
+    }
+
+    .faa-passing.animated.faa-slow[b-7882z672yd],
+    .faa-passing.animated-hover.faa-slow:hover[b-7882z672yd],
+    .faa-parent.animated-hover:hover > .faa-passing.faa-slow[b-7882z672yd] {
+        animation: passing-b-7882z672yd 3s linear infinite;
+    }

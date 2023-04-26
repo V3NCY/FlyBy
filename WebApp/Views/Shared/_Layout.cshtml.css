@@ -154,4 +154,42 @@ nav.navbar {
     color: #2c2c2c;
     letter-spacing: .2em;
     text-shadow: 2px 2px 0px #d5d5d5, 3px 3px 0px rgba(0, 0, 0, 0.6);
+    -webkit-animation: fa-passing 1s;
+    animation: fa-passing 1s
 }
+
+/* PASSING */
+@keyframes passing {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0
+    }
+
+    50% {
+        transform: translateX(0%);
+        opacity: 1
+    }
+
+    100% {
+        transform: translateX(50%);
+        opacity: 0
+    }
+}
+
+.faa-passing.animated,
+.faa-passing.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing {
+    animation: passing 2s linear infinite;
+}
+
+    .faa-passing.animated.faa-fast,
+    .faa-passing.animated-hover.faa-fast:hover,
+    .faa-parent.animated-hover:hover > .faa-passing.faa-fast {
+        animation: passing 1s linear infinite;
+    }
+
+    .faa-passing.animated.faa-slow,
+    .faa-passing.animated-hover.faa-slow:hover,
+    .faa-parent.animated-hover:hover > .faa-passing.faa-slow {
+        animation: passing 3s linear infinite;
+    }
