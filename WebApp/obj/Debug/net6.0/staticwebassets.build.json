@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KSzlGV01dv+LWFjG/ZS2n9Oj+T8ZUyLtSKZ7CHMvd1w=",
+  "Hash": "rXw+IGWSDpwUGa01Wi8REjj9WTCJCrEYKds7LLJAf1o=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\austria.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "austria.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\austria.jpg"
+    },
+    {
       "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\bg.png",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\czehia.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "czehia.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\czehia.jpg"
     },
     {
       "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\de.png",
@@ -119,6 +153,23 @@
       "OriginalItemSpec": "wwwroot\\en.png"
     },
     {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\england.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "england.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\england.jpg"
+    },
+    {
       "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\favicon.ico",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -151,6 +202,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fr.png"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\france.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "france.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\france.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\germany.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "germany.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\germany.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\hungary.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "hungary.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hungary.jpg"
     },
     {
       "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\img-1.jpg",
@@ -270,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img-7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\italy.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "italy.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\italy.jpg"
     },
     {
       "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\js\\site.js",
@@ -1275,6 +1394,23 @@
       "OriginalItemSpec": "wwwroot\\logo.svg"
     },
     {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\netherlands.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "netherlands.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\netherlands.jpg"
+    },
+    {
       "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\plane.mp4",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -1290,6 +1426,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\plane.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\slovenia.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "slovenia.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\slovenia.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\switzerland.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "switzerland.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\switzerland.jpg"
     }
   ]
 }
