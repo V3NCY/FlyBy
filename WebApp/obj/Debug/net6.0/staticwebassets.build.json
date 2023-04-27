@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "exeRSXEgKOSMObf+9FjeXSQKNkYNb7eqaV3NYf1rXaY=",
+  "Hash": "KSzlGV01dv+LWFjG/ZS2n9Oj+T8ZUyLtSKZ7CHMvd1w=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -151,40 +151,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fr.png"
-    },
-    {
-      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\globe.png",
-      "SourceId": "WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
-      "BasePath": "_content/WebApp",
-      "RelativePath": "globe.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\globe.png"
-    },
-    {
-      "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\icons8-color-palette-3d-fluency-32.png",
-      "SourceId": "WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\",
-      "BasePath": "_content/WebApp",
-      "RelativePath": "icons8-color-palette-3d-fluency-32.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\icons8-color-palette-3d-fluency-32.png"
     },
     {
       "Identity": "C:\\Users\\orak\\Desktop\\WebApp\\WebApp\\wwwroot\\img-1.jpg",

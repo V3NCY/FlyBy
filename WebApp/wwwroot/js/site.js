@@ -51,5 +51,4 @@ $(window).scroll(function () {
 //    }
 //});
 
-//navbar-brand animation
-
+//carousel
