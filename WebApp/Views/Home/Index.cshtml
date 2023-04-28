@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "";
 }
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
     /* Style the video: 100% width and height to cover the entire window */
     #myVideo {
@@ -202,7 +203,7 @@
 </div>
 
 
-<!-- Carousel Card -->
+<!-- Carousel Card 
 <h1 style="font-size:3vw; color: #fff; text-align: center;">EXPLORE EUROPE</h1>
 
 <div class="container">
@@ -259,3 +260,70 @@
         </div>
     </div>
 </div>
+-->
+
+<div class="header">
+    <h1 style="font-size:3vw;">EXPLORE EUROPE</h1>
+</div>
+<div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="/belgium.jpg" alt="Chania" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>Belgium</h3>
+                    <p>Belgium has unique style and architecture.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/france.jpg" alt="Chania" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>France</h3>
+                    <p>The atmosphere in France has a touch of Florence and Venice.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/germany.jpg" alt="Flower" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>Germany</h3>
+                    <p>Beautiful streets in Germany</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/greece.jpg" alt="Flower" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>Greece</h3>
+                    <p>Fabulous Santorini!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

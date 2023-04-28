@@ -258,7 +258,7 @@ ul {
 /*    --col-gap: 2rem;
     --row-gap: 2rem;*/
     --line-w: 0.25rem;
-    display: grid;
+/*    display: grid;*/
     grid-template-columns: var(--line-w) 1fr;
     grid-auto-columns: max-content;
     column-gap: var(--col-gap);
@@ -458,15 +458,12 @@ ul {
     position: absolute;
 }
 
-.footer-contents {
-    text-align: center;
-}
 
 .footer-clean h3 {
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
     .footer-clean ul {
@@ -505,7 +502,6 @@ ul {
 }
 
 .footer-clean .item.social > a {
-    font-size: 24px;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -834,39 +830,3 @@ select {
 }
 
 /*carousel cards*/
-.book {
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 300px;
-    background-color: whitesmoke;
-    perspective: 2000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-}
-
-.cover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s;
-    transform-origin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.book:hover .cover {
-    transition: all 0.5s;
-    transform: rotatey(-80deg);
-}
-
-p {
-    font-size: 20px;
-    font-weight: bolder;
-}
-
