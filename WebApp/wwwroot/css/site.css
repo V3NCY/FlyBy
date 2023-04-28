@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
@@ -255,8 +255,8 @@ h1 {
 }*/
 
 ul {
-/*    --col-gap: 2rem;
-    --row-gap: 2rem;*/
+/*    --col-gap: 2rem;*/
+    --row-gap: 2rem;
     --line-w: 0.25rem;
 /*    display: grid;*/
     grid-template-columns: var(--line-w) 1fr;
@@ -486,6 +486,10 @@ ul {
 
     .footer-clean .item.social {
         text-align: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
     }
 
 @media (max-width:767px) {

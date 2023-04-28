@@ -51,15 +51,23 @@ button.accept-policy[b-7882z672yd] {
 nav[b-7882z672yd] {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    text-align: end;
     box-shadow: 0 7px 7px 0 rgba(0,0,0,.2);
+    width: 100%;
+    height: 90px;
 }
 
 
-.nav-item[b-7882z672yd]{
-    font-weight: 500; 
+.nav-item[b-7882z672yd] {
+    font-weight: 500;
     color: #fff;
-    
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    font-size: 18px;
+    padding-top: 30px;
 }
     .nav-item:hover[b-7882z672yd] {
         background: rgb(246,31,41);
@@ -67,8 +75,19 @@ nav[b-7882z672yd] {
         border-radius: 50px;
     }
 
-.nav-link a[b-7882z672yd]{
+    .nav-items[b-7882z672yd] {
+        font-size: 18px;
+    }
+
+.nav-link a[b-7882z672yd] {
     font-weight: bolder;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    
 }
 /*.footer {
     background-color: #4158D0;
@@ -79,6 +98,8 @@ nav[b-7882z672yd] {
     font-weight: 500;
     font-size: 25px;
 }*/
+
+
 .btn[b-7882z672yd] {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
