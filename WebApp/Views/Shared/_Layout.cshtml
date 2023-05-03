@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="~/WebApp.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script type="text/javascript" 
+ src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 </head>
-
+<style>
+    <style>#google_translate_element,.skiptranslate{display:none;}body{top:0!important;}</style>
+</style>
 <body>
     
     <header>
@@ -40,7 +45,7 @@
                     </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="About"><i class="fa-solid fa-users"></i><span> About</span></a>
+                        <a class="nav-link" asp-action="About"><i class="fa-solid fa-users lang"></i><span> About</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-action="Contacts"><i class="fa-solid fa-headset"></i><span> Support</span></a>
@@ -48,6 +53,7 @@
                     <li class="nav-item">
                     </li>
                 </ul>
+                    <div id="google_translate_element"></div>
                </div>
                 <form class="form-inline my-2 my-lg-0">
                     <!-- contact info 
@@ -60,7 +66,8 @@
                         </ul>
                     </ul>
                   contact info end-->
-                <div class="lang-menu">
+
+    @*            <div class="lang-menu">
                     <div class="selected-lang">
                         English
                     </div>
@@ -79,7 +86,7 @@
                         </li>
                     </ul>
 
-                </div>
+                </div>*@
 
                     <div>
                         <ul class="navbar-nav">
@@ -165,24 +172,11 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-                    <!-- JavaScript for handling language selection -->
-                    <script>
-                        const greetings = document.getElementById('greetings');
-                        const languageSelect = document.getElementById('language-select');
-
-                        languageSelect.addEventListener('change', function () {
-                            if (languageSelect.value === 'en') {
-                                greetings.textContent = 'Hello!';
-                            } else if (languageSelect.value === 'bg') {
-                                greetings.textContent = 'Здравейте!';
-                            } else if (languageSelect.value === 'fr') {
-                                greetings.textContent = 'Bonjour!';
-                            } else if (languageSelect.value === 'de') {
-                                greetings.textContent = 'Guten Tag!';
-                            }
-                        });
-                    </script>
-
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

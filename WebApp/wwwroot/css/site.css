@@ -873,6 +873,7 @@ ul {
                 display: inline-block;
                 width: 25px;
                 height: 25px;
+                top: 10px;
                 vertical-align: central;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -900,3 +901,22 @@ ul {
     display: block;
 }
 
+
+/*google translate*/
+
+.goog-te-combo {
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: auto;
+    text-align: center;
+}
+
+.goog-te-gadget {
+    font-family: arial;
+    font-size:0px; 
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}

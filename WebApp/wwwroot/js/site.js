@@ -51,4 +51,52 @@ $(window).scroll(function () {
 //    }
 //});
 
-//carousel
+//translation
+
+var arrLang = {
+    "en": {
+        "HOME": "Home",
+        "Flights": "Flights",
+        "Flight Radar": "Flight Radar",
+        "About": "About",
+        "Support": "Support",
+    },
+    "bg": {
+        "HOME": "Начало",
+        "Flights": "Полети",
+        "Flight Radar": "Самолетен радар",
+        "About": "За нас",
+        "Support": "Поддръжка",
+    },
+    "de": {
+        "HOME": "Heim",
+        "Flights": "Fluge",
+        "Flight Radar": "Flugradar",
+        "About": "Uber uns",
+        "Support": "Unterstutzung",
+    },
+    "fr": {
+        "HOME": "Maison",
+        "Flights": "Vols",
+        "Flight Radar": "Radar de vol",
+        "About": "A propos de nous",
+        "Support": "Soutien",
+    }
+};
+
+$(document).ready(function () {
+    // The default language is English
+    var lang = "en";
+    $(".lang").each(function (index, element) {
+        $(this).text(arrLang[lang][$(this).attr("key")]);
+    });
+});
+
+// get/set the selected language
+$(".translate").click(function () {
+    var lang = $(this).attr("id");
+
+    $(".lang").each(function (index, element) {
+        $(this).text(arrLang[lang][$(this).attr("key")]);
+    });
+});
