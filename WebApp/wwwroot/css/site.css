@@ -740,40 +740,6 @@ ul {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-/*language picker*/
-.form-select {
-    display: block;
-    width: 130px;
-    padding: .375rem 2.25rem .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #212529;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: right .75rem center;
-    background-size: 16px 12px;
-    border: 1px solid #a3a3a3;
-    border-radius: .25rem;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    color: rgba(255,255,255,.7);
-    font-weight: 500;
-}
-select {
-    margin: 40px;
-    color: #fff;
-    }
-
-    select:hover {
-        background: rgb(246,31,41);
-        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-        border-radius: 50px;
-    }
-    select option {
-        background-color: #FFA8A8;
-    }
-
     /*Scrollbar*/
     /* width */
     ::-webkit-scrollbar {
@@ -833,4 +799,100 @@ select {
     color: white;
 }
 
-/*carousel cards*/
+/*lang*/
+.lang-menu {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.7;
+    position: relative;
+    transition: 0.2s;
+}
+
+
+    .lang-menu .selected-lang {
+        display: flex;
+        justify-content: space-between;
+        line-height: 2;
+        cursor: pointer;
+    }
+
+        .lang-menu .selected-lang:before {
+            content: '';
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+/*            background-image: url(https://www.countryflags.io/us/flat/32.png);*/
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+    .lang-menu ul {
+        margin: 0;
+        padding: 0;
+        display: none;
+        background-color: #fff;
+/*        border: 1px solid #f8f8f8;*/
+        position: absolute;
+        top: 45px;
+        right: 0px;
+        width: 50px;
+        border-radius: 5px;
+/*        box-shadow: 10px 1px 10px rgba(0,0,0,0.2);*/
+    }
+
+
+        .lang-menu ul li {
+            list-style: none;
+            text-align: center;
+/*            display: flex;*/
+            justify-content: center;
+        }
+
+            .lang-menu ul li a {
+                text-decoration: none;
+                width: 125px;
+/*                padding: 5px 10px;*/
+                display: block;
+            }
+
+            .lang-menu ul li:hover {
+                background-color: #f2f2f2;
+            }
+
+            .lang-menu ul li a:before {
+                content: '';
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                vertical-align: middle;
+/*                margin-right: 10px;*/
+                background-size: contain;
+/*                background-repeat: no-repeat;*/
+            }
+
+.de:before {
+    background-image: url(/de.png);
+}
+
+.en:before {
+    background-image: url(/en.png);
+}
+
+.fr:before {
+    background-image: url(/fr.png);
+}
+
+.bg:before {
+    background-image: url(/bg.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
+}
+
