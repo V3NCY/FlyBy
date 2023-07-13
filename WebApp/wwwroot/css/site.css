@@ -1152,10 +1152,10 @@ h2 {
 .list input[type="checkbox"]:checked ~ span {
     color: #154e6b;
 }
-
+/*
     .list input[type="checkbox"]:checked ~ span:before {
         transform: translateY(-50%) scaleX(1);
         transform-origin: left;
         transition: transform 0.5s;
         transition-delay: 0.5s;
-    }
+    }*/
