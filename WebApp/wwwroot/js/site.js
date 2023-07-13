@@ -100,3 +100,5 @@ $(".translate").click(function () {
         $(this).text(arrLang[lang][$(this).attr("key")]);
     });
 });
+
+//
