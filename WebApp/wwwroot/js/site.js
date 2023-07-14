@@ -155,6 +155,7 @@ fileInput.addEventListener('change', (event) => {
 });
 
 //loader
+
 // Get references to the loader elements
 const loaderOverlay = document.getElementById('loader-overlay');
 const button = document.getElementById('myButton');
