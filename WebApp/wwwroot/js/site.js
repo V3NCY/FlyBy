@@ -101,23 +101,55 @@ $(".translate").click(function () {
     });
 });
 
-// Get the modal
-var modal = document.getElementById("myModal");
+//Image upload
+const fileInput = document.getElementById('select-image');
+const images = document.getElementById('images');
+const totalImages = document.getElementById('total-images');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+// Listen to the change event on the <input> element
+fileInput.addEventListener('change', (event) => {
+    // Get the selected image file
+    const imageFiles = event.target.files;
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    // Show the number of images selected
+    totalImages.innerText = imageFiles.length;
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-}
+    // Empty the images div
+    images.innerHTML = '';
+
+    if (imageFiles.length > 0) {
+        // Loop through all the selected images
+        for (const imageFile of imageFiles) {
+            const reader = new FileReader();
+
+            // Convert each image file to a string
+            reader.readAsDataURL(imageFile);
+
+            // FileReader will emit the load event when the data URL is ready
+            // Access the string using reader.result inside the callback function
+            // ...
+
+            reader.addEventListener('load', () => {
+                // Create new <img> element and add it to the DOM
+                const imgElement = document.createElement('img');
+                imgElement.src = reader.result;
+                imgElement.classList.add('img-box');
+
+                const imageBox = document.createElement('div');
+                imageBox.classList.add('image_box');
+                imageBox.appendChild(imgElement);
+
+                // Set specific width and height for the images
+                imgElement.style.width = '51mm'; // Adjust the width as needed
+                imgElement.style.height = '51mm';// Adjust the height as needed
+
+                // Add the image box to the images div
+                images.appendChild(imageBox);
+            });
+
+        }
+    } else {
+        // Empty the images div
+        images.innerHTML = '';
+    }
+});
