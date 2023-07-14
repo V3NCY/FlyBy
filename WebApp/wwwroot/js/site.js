@@ -101,58 +101,6 @@ $(".translate").click(function () {
     });
 });
 
-//Image upload
-const fileInput = document.getElementById('select-image');
-const images = document.getElementById('images');
-const totalImages = document.getElementById('total-images');
-
-// Listen to the change event on the <input> element
-fileInput.addEventListener('change', (event) => {
-    // Get the selected image file
-    const imageFiles = event.target.files;
-
-    // Show the number of images selected
-    totalImages.innerText = imageFiles.length;
-
-    // Empty the images div
-    images.innerHTML = '';
-
-    if (imageFiles.length > 0) {
-        // Loop through all the selected images
-        for (const imageFile of imageFiles) {
-            const reader = new FileReader();
-
-            // Convert each image file to a string
-            reader.readAsDataURL(imageFile);
-
-            // FileReader will emit the load event when the data URL is ready
-            // Access the string using reader.result inside the callback function
-            // ...
-
-            reader.addEventListener('load', () => {
-                // Create new <img> element and add it to the DOM
-                const imgElement = document.createElement('img');
-                imgElement.src = reader.result;
-                imgElement.classList.add('img-box');
-
-                const imageBox = document.createElement('div');
-                imageBox.classList.add('image_box');
-                imageBox.appendChild(imgElement);
-
-                // Set specific width and height for the images
-                imgElement.style.width = '51mm'; // Adjust the width as needed
-                imgElement.style.height = '51mm';// Adjust the height as needed
-
-                // Add the image box to the images div
-                images.appendChild(imageBox);
-            });
-
-        }
-    } else {
-        // Empty the images div
-        images.innerHTML = '';
-    }
-});
 
 //loader
 
@@ -171,3 +119,5 @@ button.addEventListener('click', function () {
         loaderOverlay.style.display = 'none';
     }, 3000);
 });
+
+//multiple select

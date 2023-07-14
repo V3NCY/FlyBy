@@ -1267,3 +1267,24 @@ label svg {
         transform: rotate(360deg);
     }
 }
+
+/*Image Upload About*/
+#drop-area {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#preview-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.preview-image {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}

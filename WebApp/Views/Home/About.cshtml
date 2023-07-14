@@ -106,30 +106,86 @@
 	<h6 style="color: #fff;">Passport Image Requirement (2 x 2 inches (51 x 51 mm))</h6>
 	<h6 style="color: #fff;">Head must be between 1 -1 3/8 inches (25 - 35 mm) from the bottom of the chin to the top of the head.</h6>
 	<br />
-	<div class="container-image">
-    <!-- Input element to choose images -->
-    <input type="file" id="select-image" multiple>
-    <label class="label-img" for="select-image">
-        <?xml version="1.0" ?><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M1344 1472q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm256 0q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm128-224v320q0 40-28 68t-68 28h-1472q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h427q21 56 70.5 92t110.5 36h256q61 0 110.5-36t70.5-92h427q40 0 68 28t28 68zm-325-648q-17 40-59 40h-256v448q0 26-19 45t-45 19h-256q-26 0-45-19t-19-45v-448h-256q-42 0-59-40-17-39 14-69l448-448q18-19 45-19t45 19l448 448q31 30 14 69z" />
-        </svg>
-        Choose Images
-    </label>
 
-    <div class="preview_image">
-        <!-- It will show the total number of files selected -->
-        <p><span id="total-images">0</span> File(s) Selected</p>
-
-        <!-- All images will display inside this div -->
-        <div id="images"></div>
-    </div>
-</div>
-	<br />
 	<div id="loader-overlay">
   <div class="loader">
     <i class="fas fa-plane"></i> <!-- Custom plane icon -->
   </div>
 </div>
+
+<div id="drag-drop-container">
+  <div id="drop-area">
+    <p>Drag and drop an image here</p>
+  </div>
+  <br/>
+  <input type="file" id="file-input">
+  <div id="preview-container"></div>
+  <br />
 </div>
-	<button id="myButton" onclick="handleButtonClick()" style="background-color: #03A9F4; color: #fff; border: none; border-radius: 3px;  width: 100%;  height: 50px; font-weight: 400;  font-size: 20px;">Submit</button>
+
+
+</div>
+	<button id="myButton myBtn" onclick="handleButtonClick()" style="background-color: #03A9F4; color: #fff; border: none; border-radius: 3px;  width: 100%;  height: 50px; font-weight: 400;  font-size: 20px;">Submit</button>
+	
+	@*Image Upload*@
+		<script>  
+const dropArea = document.getElementById('drop-area');
+const fileInput = document.getElementById('file-input');
+const previewContainer = document.getElementById('preview-container');
+
+// Prevent default drag behaviors
+['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+  dropArea.addEventListener(eventName, preventDefaults, false);
+  document.body.addEventListener(eventName, preventDefaults, false);
+});
+
+// Highlight drop area when an item is dragged over it
+['dragenter', 'dragover'].forEach(eventName => {
+  dropArea.addEventListener(eventName, highlight, false);
+});
+
+['dragleave', 'drop'].forEach(eventName => {
+  dropArea.addEventListener(eventName, unhighlight, false);
+});
+
+// Handle dropped files
+dropArea.addEventListener('drop', handleDrop, false);
+
+// Handle file selection from file input
+fileInput.addEventListener('change', handleFiles, false);
+
+function preventDefaults(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}
+
+function highlight() {
+  dropArea.classList.add('highlight');
+}
+
+function unhighlight() {
+  dropArea.classList.remove('highlight');
+}
+
+function handleDrop(event) {
+  const files = event.dataTransfer.files;
+  handleFiles(files);
+}
+
+function handleFiles(files) {
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    if (file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const image = new Image();
+        image.src = event.target.result;
+        image.classList.add('preview-image');
+        previewContainer.appendChild(image);
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+}
+
+</script>  
