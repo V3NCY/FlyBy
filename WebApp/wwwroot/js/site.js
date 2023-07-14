@@ -153,3 +153,20 @@ fileInput.addEventListener('change', (event) => {
         images.innerHTML = '';
     }
 });
+
+//loader
+// Get references to the loader elements
+const loaderOverlay = document.getElementById('loader-overlay');
+const button = document.getElementById('myButton');
+
+// Add click event listener to the button
+button.addEventListener('click', function () {
+    // Show the loader
+    loaderOverlay.style.display = 'block';
+
+    // Set a timeout to hide the loader after a certain period of time (e.g., 3 seconds)
+    setTimeout(function () {
+        // Hide the loader
+        loaderOverlay.style.display = 'none';
+    }, 3000);
+});
